@@ -57,7 +57,7 @@ public class DichVu {
 	}
 
 	public void setMaDV(int maDV) {
-		this.maDV = maDV;
+		if (maDV > 0) this.maDV = maDV;
 	}
 
 	public String getTenDV() {
@@ -65,7 +65,7 @@ public class DichVu {
 	}
 
 	public void setTenDV(String tenDV) {
-		this.tenDV = tenDV;
+		if (tenDV.trim().length() > 0) this.tenDV = tenDV;
 	}
 
 	public double getDonGia() {
@@ -73,7 +73,7 @@ public class DichVu {
 	}
 
 	public void setDonGia(double donGia) {
-		this.donGia = donGia;
+		if (donGia >= 0) this.donGia = donGia;
 	}
 
 	public enum_LoaiDV getLoaiDV() {
