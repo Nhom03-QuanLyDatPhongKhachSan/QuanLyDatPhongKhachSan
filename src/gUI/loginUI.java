@@ -1,4 +1,4 @@
-package LoginUI;
+package gUI;
 
 public class loginUI {
 
